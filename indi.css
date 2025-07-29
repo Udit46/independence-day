@@ -1,0 +1,113 @@
+  <style>
+        body {
+            background: linear-gradient(to bottom, #ff9933, #ffffff, #138808);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 2rem;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: background-color 0.3s;
+            animation: pulse 2s infinite;
+        }
+        .whatsapp-btn:hover {
+            background-color: #20b958;
+        }
+        .whatsapp-icon {
+            width: 24px;
+            height: 24px;
+        }
+        .hero-images {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .hero-images img {
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+            border: 3px solid #ff9933;
+            object-fit: cover;
+            animation: slideIn 1s ease-in-out;
+        }
+        .patriotism-text {
+            font-style: italic;
+            color: #138808;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            animation: fadeInText 2s ease-in-out;
+        }
+        .audio-controls {
+            margin-top: 1rem;
+        }
+        .flag-gif {
+            width: 200px;
+            height: auto;
+            margin: 1rem auto;
+            animation: bounce 1.5s infinite;
+        }
+        .animated-heading {
+            animation: bounceHeading 1.5s infinite, colorShift 3s infinite;
+        }
+        canvas {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+            z-index: -1;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: scale(0.9); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        @keyframes slideIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInText {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes bounceHeading {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        @keyframes colorShift {
+            0% { color: #ff9933; }
+            33% { color: #ffffff; }
+            66% { color: #138808; }
+            100% { color: #ff9933; }
+        }
+    </style>
+
+  

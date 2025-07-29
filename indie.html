@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independence Day Greetings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body>
+
+    <div class="container">
+        <canvas id="borderCanvas"></canvas>
+        <h1 class="text-3xl font-bold animated-heading">Happy Independence Day!</h1>
+        <img class="flag-gif" src="https://i.pinimg.com/originals/44/02/57/440257d061972e045735747a626e62ae.gif" alt="Indian Flag">
+        <div class="hero-images">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Mahatma-Gandhi%2C_studio%2C_1931.jpg" alt="Mahatma Gandhi">
+            <img src="https://i.pinimg.com/736x/f4/a1/74/f4a174d2bd56afafcc85638ffd681664.jpg" alt="Bhagat Singh">
+        </div>
+        <p class="patriotism-text">Honoring the sacrifices of Mahatma Gandhi and Bhagat Singh for our freedom!</p>
+        <p class="text-lg text-gray-800 mb-6">
+            Celebrate the spirit of freedom and unity! Wishing you and your loved ones a joyous Independence Day filled with pride and patriotism. Let's honor our heroes and cherish the liberty we enjoy.
+        </p>
+        <p class="text-md text-gray-700 mb-6">
+            🇮🇳 Jai Hind! 🇮🇳
+        </p>
+        <div class="audio-controls">
+            <audio id="vandeMataram" controls autoplay>
+                <source src="https://dl.prokerala.com/downloads/ringtones/files/dl/mp3/vandemataramflutebyrajeshcherthalaringtone-43151.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <a href="javascript:void(0)" onclick="shareOnWhatsApp()" class="whatsapp-btn">
+            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="white">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.134.297-.347.446-.52.149-.174.198-.298.297-.497.099-.198.05-.371-.025-.52-.074-.149-.669-.719-.911-.99-.242-.271-.487-.422-.669-.422-.173 0-.347-.025-.52-.074-.173-.05-.998-.175-1.37.223-.372.372-.669 1.089-.669 1.785 0 .694.5 1.367.744 1.641.247.272 3.46 5.272 8.417 7.39.803.34 1.428.606 1.916.806.488.198.892.372 1.19.223.297-.149 1.234-.669 1.408-1.316.173-.645.074-1.194-.099-1.342-.173-.149-.396-.223-.693-.372z"/>
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.133.558 4.134 1.527 5.873L0 24l6.315-1.658C8.053 23.442 9.975 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22.093c-1.975 0-3.897-.558-5.573-1.61l-.396-.223-3.746.983.998-3.645-.223-.396C2.134 15.975 1.5 14.053 1.5 12c0-5.79 4.71-10.5 10.5-10.5S22.5 6.21 22.5 12 17.79 22.5 12 22.5z"/>
+            </svg>
+            Share on WhatsApp
+        </a>
+    </div>
+
+    
+</body>
+</html>
